@@ -17,6 +17,7 @@ models:
         tests:
           - not_null
           - unique
+
   - name: stg_orders
     config:
       access: protected
@@ -25,7 +26,14 @@ models:
         tests:
           - not_null
           - unique
+      - name: ordered_at
+        data_tests:
+          - date_greater_than:
+              arguments:
+                date_field: "2016-01-01"
   - name: stg_products
+    group: product
+    access: private
     columns:
       - name: product_id
         tests:
