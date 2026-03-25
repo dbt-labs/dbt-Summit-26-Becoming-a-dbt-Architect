@@ -16,7 +16,7 @@ joined as (
         orders.ordered_at,
         orders.customer_name,
         orders.location_name,
-        orders.tax_rate,
+        orders.tax_rate_test,
         orders.location_opened_at
         
     from orders 
