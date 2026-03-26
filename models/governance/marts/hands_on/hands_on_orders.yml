@@ -1,14 +1,4 @@
 models:
-- name: hands_on_orders
-  latest_version: 1
-  description:
-    - v: 1
-    - v: 2
-      columns:
-        - name: tax_due
-          data_type: number
-        - include: all
-          exclude: [tax_paid]
 
 - name: hands_on_orders
   description: This model provides a detailed view of customer orders, including financial
