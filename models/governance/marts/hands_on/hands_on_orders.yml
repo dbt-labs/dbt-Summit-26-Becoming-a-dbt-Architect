@@ -52,7 +52,7 @@ models:
 
 
 - name: hands_on_orders
-  latest_version: 1
+  latest_version: 2
 
   versions:
    - v: 1
