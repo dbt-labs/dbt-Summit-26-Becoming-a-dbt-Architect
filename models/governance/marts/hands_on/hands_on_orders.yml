@@ -57,6 +57,8 @@ models:
       - v: 1
 
       - v: 2
+        config:
+         alias: hands_on_orders
         columns:
           - name: tax_due
             data_type: number
