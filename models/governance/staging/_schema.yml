@@ -26,8 +26,11 @@ models:
           - not_null
           - unique
   - name: stg_products
+    config:
+      group: product
+      access: private
     columns:
-      - name: product_id
+      - name: product_id  
         tests:
           - not_null
           - unique
