@@ -1,5 +1,6 @@
 models:
 - name: hands_on_orders
+  latest_version: 2
   config:
     contract:
       enforced: true
@@ -49,3 +50,13 @@ models:
     data_type: int
     description: The year when the order was placed, extracted from the ordered_at
       timestamp.
+  versions:
+    - v: 1
+    - v: 2
+      config:
+        alias: hands_on_orders
+      columns:
+        - name: tax_due
+          data_type: number
+        - include: all
+          exclude: [tax_paid]
