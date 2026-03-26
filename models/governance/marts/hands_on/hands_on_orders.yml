@@ -5,6 +5,7 @@ models:
     trends, customer behavior, and location performance over time.
   columns:
   - name: order_id
+    data_type: int
     description: A unique identifier for each order.
   - name: location_id
     description: The identifier for the location where the order was placed.
