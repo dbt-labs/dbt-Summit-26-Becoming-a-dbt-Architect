@@ -8,7 +8,7 @@ final as (
         location_id,
         customer_id,
         order_total,
-        tax_paid,
+        tax_paid as tax_due,
         ordered_at,
         customer_name,
         location_name,

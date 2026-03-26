@@ -8,7 +8,7 @@ models:
    trends, customer behavior, and location performance over time.
   columns:
   - name: order_id
-    data_type: varchar
+    data_type: int
     description: A unique identifier for each order.
   - name: location_id
     data_type: varchar
@@ -49,3 +49,16 @@ models:
     data_type: int
     description: The year when the order was placed, extracted from the ordered_at
      timestamp.
+
+
+- name: hands_on_orders
+  latest_version: 1
+
+  versions:
+   - v: 1
+   - v: 2
+     columns:
+       - name: tax_due
+         data_type: number
+       - include: all
+         exclude: [tax_paid]
