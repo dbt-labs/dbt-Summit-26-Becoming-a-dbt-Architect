@@ -25,6 +25,10 @@ models:
         tests:
           - not_null
           - unique
+      - name: ordered_at
+        data_tests:
+          - date_greater_than_2015
+
   - name: stg_products
     config:
       group: product
