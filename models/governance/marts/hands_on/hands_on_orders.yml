@@ -1,11 +1,17 @@
+version: 2
+
 models:
   - name: hands_on_orders
-    config:
-      contract:
-        enforced: true
+    latest_version: 1
+
     description: This model provides a detailed view of customer orders, including financial
       details and temporal information. It is designed to facilitate analysis of order
       trends, customer behavior, and location performance over time.
+
+    config:
+      contract:
+        enforced: true
+
     columns:
       - name: order_id
         data_type: varchar
@@ -46,3 +52,13 @@ models:
       - name: ordered_year
         data_type: int
         description: The year when the order was placed, extracted from the ordered_at timestamp.
+
+    versions:
+      - v: 1
+
+      - v: 2
+        columns:
+          - name: tax_due
+            data_type: number
+          - include: all
+            exclude: [tax_paid]
