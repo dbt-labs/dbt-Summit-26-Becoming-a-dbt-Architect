@@ -62,7 +62,7 @@ models:
         - include: all
           exclude: [tax_paid]
   config:
-    alias: hands_on_orders
+
     contract:
       enforced: true
   description: This model provides a detailed view of customer orders, including financial
