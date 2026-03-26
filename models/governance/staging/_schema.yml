@@ -28,7 +28,7 @@ models:
   - name: stg_products
     config:
       group: product
-      access: private
+
     columns:
       - name: product_id
         tests:
