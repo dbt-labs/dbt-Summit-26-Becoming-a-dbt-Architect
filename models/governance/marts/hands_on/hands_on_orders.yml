@@ -12,7 +12,7 @@ models:
         - include: all
           exclude: [tax_paid]
   config:
-    contract:
+   contract:
       enforced: true
   description: This model provides a detailed view of customer orders, including financial
    details and temporal information. It is designed to facilitate analysis of order
