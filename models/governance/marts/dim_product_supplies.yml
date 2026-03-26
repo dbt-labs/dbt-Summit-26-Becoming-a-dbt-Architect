@@ -1,6 +1,7 @@
 models:
   - name: dim_product_supplies
     config:
+      group: product
       contract:
         enforced: true
     columns:
