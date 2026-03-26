@@ -1,6 +1,6 @@
 models:
 - name: hands_on_orders
-  latest_version: 1
+  latest_version: 2
   config:
     contract:
       enforced: true
@@ -53,6 +53,8 @@ models:
   versions:
   - v: 1
   - v: 2
+    config:
+      alias: hands_on_orders
     columns:
       - name: tax_due
         data_type: number
