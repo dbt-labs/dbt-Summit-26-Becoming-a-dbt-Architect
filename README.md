@@ -1,15 +1,8 @@
-Welcome to your new dbt project!
+# Becoming a dbt Architect — dbt Summit 26
+This is the foundational dbt project for the dbt Summit 26 training session, "Becoming a dbt Architect." It's the primary project learners work in throughout the session: configuring environments and jobs, setting up security and access controls, and applying model governance (groups, access policies, contracts, and versioning) on the dbt platform.
 
-### Using the starter project
+This project also serves as the upstream project in the dbt Mesh cross-project reference lab — its public models are consumed by the companion marketing project repo.
 
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](https://getdbt.com/community) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+## What's here:
+- models/, seeds/, snapshots/, analyses/, macros/, tests/ — standard dbt project structure
+- dbt_project.yml, packages.yml — project and package configuration
