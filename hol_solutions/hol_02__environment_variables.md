@@ -1,6 +1,6 @@
 Build one:
 1. Navigate to `models`→`DEMO_ENV_VAR`→`my_first_dbt_model.sql`
-2. `dbt build` it… What happens? Why?
+2. `dbt build` it… Check logs? How did it materialize? Why?
 
 Define environment variable:
 1. Navigate to `Orchestration`→`Environments`
