@@ -7,8 +7,6 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized= env_var('DBT_MATERIALIZATION')) }}
-
 with source_data as (
 
     select 1 as id
