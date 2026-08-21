@@ -35,8 +35,6 @@ models:
     versions: ###Add versioning section defining each version and listing changes to contract
       - v: 1
           ##Matches above! Nothing more needed
-        config:
-          alias: fct_orders
       - v: 2
         columns:
           - name: order_amount ##v2 Adds in new column name and date type change
@@ -44,4 +42,4 @@ models:
           - name: location_opened_at
             data_type: date
           - include: all #Includes all other fields
-            exclude: [order_total] #But removes the old name of order_total
+            exclude: [order_total, location_opened_at] #But removes the old name of order_total
