@@ -7,7 +7,7 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized= env_var('DBT_MATERIALIZATION')) }}
+{{ config(materialized = env_var('DBT_MATERIALIZATION')) }}
 
 with source_data as (
 
