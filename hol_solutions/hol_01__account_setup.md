@@ -6,4 +6,4 @@ This is how you get started:
 - Select Complete Registration
 3. Make a note of the dbt platform account Email Address and Password. You will need this to log back into your account in the future. **You will not see this again!**
 4. Log in to access your dbt platform account
-5. Create a git branch `s26_arch_firstlast` (firstlast refers to first and last initial)
+5. Create a git branch `s26_arch_firstlast` (firstlast refers to first and last name)
