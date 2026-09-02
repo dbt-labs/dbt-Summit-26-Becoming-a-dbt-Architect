@@ -12,4 +12,5 @@ Define environment variable:
 <img width="1181" height="358" alt="image" src="https://github.com/user-attachments/assets/ee94a0ad-a8e5-466b-b3e2-670a8ebe9722" />
 
 Build two:
-1. `dbt build` again… What changed?
+1. Add an `env_var()` to change how my_first_dbt_model materializes. See the [env_var docs](https://docs.getdbt.com/reference/dbt-jinja-functions/env_var?version=2) to learn more.
+2. `dbt build` again… What changed?
