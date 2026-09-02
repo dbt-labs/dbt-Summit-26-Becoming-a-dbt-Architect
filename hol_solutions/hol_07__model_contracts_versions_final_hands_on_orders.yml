@@ -1,0 +1,63 @@
+models:
+- name: hands_on_orders
+  description: This model provides a detailed view of customer orders, including financial
+    details and temporal information. It is designed to facilitate analysis of order
+    trends, customer behavior, and location performance over time.
+  latest_version: 1 ##Call out which version will be the default version when running this model
+  config:
+      contract:
+        enforced: true
+  columns:
+  - name: order_id
+    description: A unique identifier for each order.
+    data_type: varchar
+  - name: location_id
+    description: The identifier for the location where the order was placed.
+    data_type: varchar
+  - name: customer_id
+    description: The identifier for the customer who placed the order.
+    data_type: varchar
+  - name: order_total
+    description: The total amount for the order, including all items purchased.
+    data_type: number
+  - name: tax_paid
+    description: The total tax amount paid for the order.
+    data_type: number
+  - name: ordered_at
+    description: The timestamp when the order was placed.
+    data_type: timestamp_ntz
+  - name: customer_name
+    description: The name of the customer who placed the order.
+    data_type: varchar
+  - name: location_name
+    description: The name of the location where the order was placed.
+    data_type: varchar
+  - name: tax_rate
+    description: The tax rate applied to the order.
+    data_type: number
+  - name: location_opened_at
+    description: The timestamp when the location was opened.
+    data_type: timestamp_ntz
+  - name: ordered_month
+    description: The month when the order was placed, extracted from the ordered_at
+      timestamp.
+    data_type: number
+  - name: ordered_day
+    description: The day when the order was placed, extracted from the ordered_at
+      timestamp.
+    data_type: number
+  - name: ordered_year
+    description: The year when the order was placed, extracted from the ordered_at
+      timestamp.
+    data_type: number
+  versions: ###Add versioning section defining each version and listing changes to contract
+      - v: 1
+        config:
+          alias: hands_on_orders
+          ##Matches above! Nothing more needed
+      - v: 2
+        columns:
+          - name: tax_due ##v2 Adds in new column name and date type change
+            data_type: number
+          - include: all #Includes all other fields
+            exclude: [tax_paid] #But removes the old name of tax_paid
