@@ -39,3 +39,6 @@ models:
         +materialized: view
       marts:
         +materialized: table
+
+vars:
+  min_id: 1
