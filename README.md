@@ -7,3 +7,4 @@ This project also serves as the upstream project in the dbt Mesh cross-project r
 - models/, seeds/, snapshots/, analyses/, macros/, tests/ — standard dbt project structure
 - dbt_project.yml, packages.yml — project and package configuration
 - hol_solutions/ - instructions and solutions for all hands-on labs
+- _slides/ - the slide deck from the dbt Summit 2026 Becoming a dbt Architect training session
