@@ -5,6 +5,13 @@
     This will override configurations stated in dbt_project.yml
 */
 
+{{
+    config(
+        materialized=env_var('DBT_MATERIALIZATION', 'view')
+
+    )
+}}
+
 with source_data as (
 
     select 1 as id
